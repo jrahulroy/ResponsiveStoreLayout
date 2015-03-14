@@ -1,0 +1,124 @@
+body{
+    margin:0px;
+    font:Tahoma;
+    font-family: 'Open Sans', sans-serif;
+}
+.store{
+    display: flex;
+    background: #EAE7E7;
+    width:100%;
+    height:100%;
+    
+}
+
+.store-items{
+     display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-y: scroll;
+    justify-content: flex-start;
+}
+
+.cart{
+    height:100%;
+    width:300px;
+    background: white;
+    overflow: hidden;
+    flex:none;
+    
+     -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.55s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.cart .container{
+    width:300px;
+    height:100%;
+}
+.cart.closed{
+    width:20px;
+}
+
+.store-item{
+    height:315px;
+        width:251px;
+    margin:20px;
+    background: white;
+    position: relative;
+    
+}
+
+.add-to-cart{
+    background:url("images/Add-To-Cart-Icon.png");
+    background-size: cover;
+    position: absolute;
+    top:10px;
+    right:10px;
+    height:50px;
+    width:50px;
+    
+    opacity:0;
+    cursor: pointer;
+    
+    -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.item-details{
+    bottom:0px;
+    width:100%;
+    position: absolute;
+    background: red;
+    color:white;
+    text-align: center;
+    
+    opacity:0;
+    
+     -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.item-details h3, .item-details p{
+    margin:8px 0px;
+}
+
+.store-item:hover .add-to-cart,
+.store-item:hover .item-details{
+    display: block;
+    opacity:1;
+}
+
+.opener{
+    height:100%;
+    width:20px;
+    background:#C1BEC9;
+    float:left;
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+    cursor: pointer;
+}
+.cart.closed .opener{
+    transform: rotate(180deg);
+}
+.cart .panel{
+    width:280px;
+    height:100%;
+    float:left;
+    padding:10px;
+    box-sizing: border-box;
+}
+.cart .panel table{
+    width:100%;
+    
+}
+.cart .panel table td{
+    border-top:solid 2px black;
+}

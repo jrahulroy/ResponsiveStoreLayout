@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Apple iStore</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="scripts.js" type="text/javascript"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="store">
+            <div class="store-items">
+                <div class="store-item" data-name="Apple TV" data-price="1199">
+                    <img src="images\appleTV.jpg"/>
+                    
+                    <div class="add-to-cart" onclick="Store.AddItem(this);"></div>
+                    <div class="item-details">
+                        <h3>Apple TV</h1>
+                        <p>Price: $1199.00</p>
+                        <p>Quantity: 10</p>
+                    </div>
+                </div>
+                <div class="store-item" data-name="iMac" data-price="1099">
+                    <img src="images\imac.jpg"/>
+                    <div class="add-to-cart" onclick="Store.AddItem(this);"></div>
+                    <div class="item-details">
+                        <h3>iMac</h1>
+                        <p>Price: $1099.00</p>
+                        <p>Quantity: 10</p>
+                    </div>
+                    
+                </div>
+                <div class="store-item" data-name="iPhone" data-price="399">
+                    <img src="images\iphone.jpg"/>
+                    <div class="add-to-cart" onclick="Store.AddItem(this);"></div>
+                    <div class="item-details">
+                        <h3>iPhone</h1>
+                        <p>Price: $399.00</p>
+                        <p>Quantity: 10</p>
+                    </div>
+                </div>
+                <div class="store-item" data-name="iPod" data-price="199">
+                    <img src="images\ipod.jpg"/>
+                    <div class="add-to-cart" onclick="Store.AddItem(this);"></div>
+                    <div class="item-details">
+                        <h3>iPod</h1>
+                        <p>Price: $199.00</p>
+                        <p>Quantity: 10</p>
+                    </div>
+                </div>
+                <div class="store-item" data-name="Mac Book Pro" data-price="899">
+                    <img src="images\macbookpro.jpg"/>
+                    <div class="add-to-cart" onclick="Store.AddItem(this);"></div>
+                    <div class="item-details">
+                        <h3>Mac Book Pro</h1>
+                        <p>Price: $899.00</p>
+                        <p>Quantity: 10</p>
+                    </div>
+                </div>
+                <div class="store-item" data-name="Mac Mini" data-price="699">
+                    <img src="images\macmini.jpg"/>
+                    <div class="add-to-cart" onclick="Store.AddItem(this);"></div>
+                    <div class="item-details">
+                        <h3>Mac Mini</h1>
+                        <p>Price: $699.00</p>
+                        <p>Quantity: 10</p>
+                    </div>
+                </div>
+                <div class="store-item" data-name="Mac Screen" data-price="599">
+                    <img src="images\macscreen.jpg"/>
+                    <div class="add-to-cart" onclick="Store.AddItem(this);"></div>
+                    <div class="item-details">
+                        <h3>Mac Screen</h1>
+                        <p>Price: $599.00</p>
+                        <p>Quantity: 10</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart closed">
+                <div class="container">
+                    <div class="opener" onclick="Store.SwapCart(this);"></div>
+                    <div class="panel">
+                        <h1>Shopping Cart</h1>
+                        <table id="cartList">
+                            <tr>
+                                <td>Total</td>
+                                <td>$ 0.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
